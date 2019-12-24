@@ -1,0 +1,66 @@
+body{
+  background-color:rgb(153, 231, 250);
+  background-image: url("../Backgrounds/napkin.svg");
+  font-family:"Montserrat" !important;
+  background-size:300px;
+}
+
+.content-section{
+ margin:50px auto;
+ max-height:80vh;
+ overflow: scroll;
+ border:1px solid rgba(10, 10, 10, 0.253);
+ border-radius:5px;
+}
+.profile__header
+{
+height:40vh;
+max-height:400px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+margin-bottom:20px;
+.profile__actions__link{
+  color:black;
+  font-size:18px;
+  transition:color .2s;
+}
+.profile__actions__link:hover{
+  color:rgb(136, 136, 136);
+}
+}
+.search {
+    max-width:1270px;
+margin:auto;
+    display: flex;
+    justify-content: center;
+    input {
+      padding: 18px 10px;
+      border: 0;
+      width: 55%;
+      min-width: 480px;
+      background-color: rgb(255, 255, 255);
+      transition: all 0.2s;
+      border-top-right-radius:3px;
+      border:1px solid rgba(7, 7, 7, 0.301);
+    border-bottom-right-radius: 3px;
+    border-left:0;
+
+    }
+    input:focus {
+      outline: 0;
+    }
+
+    i {
+      border-top-left-radius:3px;
+      border-bottom-left-radius:3px;
+      padding: 0 15px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 19px;
+      border:1px solid rgba(7, 7, 7, 0.301);
+      border-right:0;
+    }
+  }
