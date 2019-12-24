@@ -23,7 +23,7 @@ body {
   margin-bottom: 20px;
 }
 .profile__header .profile__actions__link {
-  color: black;
+  color: white;
   font-size: 18px;
   transition: color 0.2s;
 }
