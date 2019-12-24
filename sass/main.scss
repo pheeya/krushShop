@@ -9,9 +9,21 @@ body{
  margin:50px auto;
  max-height:80vh;
  overflow: scroll;
- border:1px solid rgba(10, 10, 10, 0.253);
+ border:2px solid rgba(97, 97, 97, 0.158);
  border-radius:5px;
  margin-bottom:0;
+
+ .profile__product__info{
+   .stock{
+     text-align:right;
+     padding:10px 0;
+     .fa-circle{
+       margin:0 5px;
+       color:rgb(35, 255, 35);
+       text-shadow: 0 0 3px rgb(0, 0, 0);;
+     }
+   }
+ }
 }
 .profile__header
 {
@@ -21,10 +33,11 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 margin-bottom:20px;
+background-color:rgb(17, 17, 17);
 // background-color:rgb(31, 31, 31);
 .profile__actions__link{
   color:rgb(255, 255, 255);
-  font-size:18px;
+  font-size:17px;
   transition:color .2s;
 }
 .profile__actions__link:hover{

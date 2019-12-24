@@ -9,9 +9,18 @@ body {
   margin: 50px auto;
   max-height: 80vh;
   overflow: scroll;
-  border: 1px solid rgba(10, 10, 10, 0.253);
+  border: 2px solid rgba(97, 97, 97, 0.158);
   border-radius: 5px;
   margin-bottom: 0;
+}
+.content-section .profile__product__info .stock {
+  text-align: right;
+  padding: 10px 0;
+}
+.content-section .profile__product__info .stock .fa-circle {
+  margin: 0 5px;
+  color: #23ff23;
+  text-shadow: 0 0 3px black;
 }
 
 .profile__header {
@@ -21,10 +30,11 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 20px;
+  background-color: #111111;
 }
 .profile__header .profile__actions__link {
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   transition: color 0.2s;
 }
 .profile__header .profile__actions__link:hover {
