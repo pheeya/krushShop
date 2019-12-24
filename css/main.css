@@ -11,6 +11,7 @@ body {
   overflow: scroll;
   border: 1px solid rgba(10, 10, 10, 0.253);
   border-radius: 5px;
+  margin-bottom: 0;
 }
 
 .profile__header {
@@ -62,6 +63,11 @@ body {
   font-size: 19px;
   border: 1px solid rgba(7, 7, 7, 0.301);
   border-right: 0;
+}
+
+#scrollMarker {
+  padding: 1px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
