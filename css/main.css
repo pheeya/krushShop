@@ -80,4 +80,51 @@ body {
   margin-bottom: 50px;
 }
 
+.telegram {
+  position: fixed;
+  overflow: hidden;
+  right: 5px;
+  bottom: -25px;
+  transition: width 0.3s;
+  width: 67px;
+}
+.telegram .telegramLink {
+  padding: 5px;
+  position: relative;
+  bottom: 60px;
+  white-space: nowrap;
+  left: 70px;
+  color: rgba(0, 0, 0, 0);
+}
+.telegram .telegramLink button {
+  border: 0;
+  padding: 5px;
+  color: white;
+  background-color: #11aeec;
+  cursor: pointer;
+  display: none;
+}
+.telegram #telegramButton {
+  font-size: 65px;
+  background-color: white;
+  color: #28bbff;
+  border-radius: 100px;
+  padding: 2px;
+  transition: font-size 0.2s;
+  cursor: pointer;
+}
+
+.telegram:hover {
+  width: 315px;
+}
+
+.telegram:hover button {
+  display: block;
+  position: absolute;
+}
+
+.telegram:hover .telegramLink {
+  color: black;
+}
+
 /*# sourceMappingURL=main.css.map */

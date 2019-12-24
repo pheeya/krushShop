@@ -1,86 +1,128 @@
-body{
-  background-color:rgb(153, 231, 250);
+body {
+  background-color: rgb(153, 231, 250);
   background-image: url("../Backgrounds/napkin.svg");
-  font-family:"Montserrat" !important;
-  background-size:300px;
+  font-family: "Montserrat" !important;
+  background-size: 300px;
 }
 
-.content-section{
- margin:50px auto;
- max-height:80vh;
- overflow: scroll;
- border:2px solid rgba(97, 97, 97, 0.158);
- border-radius:5px;
- margin-bottom:0;
+.content-section {
+  margin: 50px auto;
+  max-height: 80vh;
+  overflow: scroll;
+  border: 2px solid rgba(97, 97, 97, 0.158);
+  border-radius: 5px;
+  margin-bottom: 0;
 
- .profile__product__info{
-   .stock{
-     text-align:right;
-     padding:10px 0;
-     .fa-circle{
-       margin:0 5px;
-       color:rgb(35, 255, 35);
-       text-shadow: 0 0 3px rgb(0, 0, 0);;
-     }
-   }
- }
+  .profile__product__info {
+    .stock {
+      text-align: right;
+      padding: 10px 0;
+      .fa-circle {
+        margin: 0 5px;
+        color: rgb(35, 255, 35);
+        text-shadow: 0 0 3px rgb(0, 0, 0);
+      }
+    }
+  }
 }
-.profile__header
-{
-height:40vh;
-max-height:400px;
-display:flex;
-flex-direction: column;
-justify-content: center;
-margin-bottom:20px;
-background-color:rgb(17, 17, 17);
-// background-color:rgb(31, 31, 31);
-.profile__actions__link{
-  color:rgb(255, 255, 255);
-  font-size:17px;
-  transition:color .2s;
-}
-.profile__actions__link:hover{
-  color:rgb(136, 136, 136);
-}
+.profile__header {
+  height: 40vh;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: rgb(17, 17, 17);
+  // background-color:rgb(31, 31, 31);
+  .profile__actions__link {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    transition: color 0.2s;
+  }
+  .profile__actions__link:hover {
+    color: rgb(136, 136, 136);
+  }
 }
 .search {
-    max-width:1270px;
-margin:auto;
-    display: flex;
-    justify-content: center;
-    input {
-      padding: 18px 10px;
-      border: 0;
-      width: 55%;
-      min-width: 480px;
-      background-color: rgb(255, 255, 255);
-      transition: all 0.2s;
-      border-top-right-radius:3px;
-      border:1px solid rgba(7, 7, 7, 0.301);
+  max-width: 1270px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  input {
+    padding: 18px 10px;
+    border: 0;
+    width: 55%;
+    min-width: 480px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s;
+    border-top-right-radius: 3px;
+    border: 1px solid rgba(7, 7, 7, 0.301);
     border-bottom-right-radius: 3px;
-    border-left:0;
-
-    }
-    input:focus {
-      outline: 0;
-    }
-
-    i {
-      border-top-left-radius:3px;
-      border-bottom-left-radius:3px;
-      padding: 0 15px;
-      background-color: rgb(255, 255, 255);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 19px;
-      border:1px solid rgba(7, 7, 7, 0.301);
-      border-right:0;
-    }
+    border-left: 0;
+  }
+  input:focus {
+    outline: 0;
   }
 
-  #scrollMarker{
-    padding:1px;
-    margin-bottom:50px;
+  i {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 19px;
+    border: 1px solid rgba(7, 7, 7, 0.301);
+    border-right: 0;
   }
+}
+
+#scrollMarker {
+  padding: 1px;
+  margin-bottom: 50px;
+}
+.telegram {
+  position: fixed;
+  overflow: hidden;
+  right: 5px;
+  bottom: -25px;
+  transition: width 0.3s;
+  width: 67px;
+  .telegramLink {
+    padding: 5px;
+    position: relative;
+    bottom: 60px;
+    white-space: nowrap;
+    left: 70px;
+    color:rgba(0,0,0,0);
+    button {
+      border: 0;
+      padding: 5px;
+      color: white;
+      background-color: rgb(17, 174, 236);
+      cursor: pointer;
+      display:none;
+    }
+  }
+  #telegramButton {
+    font-size: 65px;
+    background-color: white;
+    color: rgb(40, 187, 255);
+    border-radius: 100px;
+    padding: 2px;
+    transition: font-size 0.2s;
+    cursor: pointer;
+  }
+}
+.telegram:hover {
+  width: 315px;
+}
+
+.telegram:hover  button{
+  display:block;
+  position: absolute;
+}
+.telegram:hover .telegramLink{
+  color:black;
+}
