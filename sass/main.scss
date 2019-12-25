@@ -26,22 +26,7 @@ body {
   }
 }
 .profile__header {
-  height: 40vh;
-  max-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 20px;
-  background-color: rgb(17, 17, 17);
-  // background-color:rgb(31, 31, 31);
-  .profile__actions__link {
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    transition: color 0.2s;
-  }
-  .profile__actions__link:hover {
-    color: rgb(136, 136, 136);
-  }
+  background-color:black;
 }
 .search {
   max-width: 1270px;
@@ -90,13 +75,15 @@ body {
   bottom: 10px;
   transition: width 0.3s;
   #telegramButton {
-    font-size: 40px;
-    background-color: white;
+    font-size: 30px;
+    background-color: rgb(43, 43, 43);
     color: #28bbff;
     transition: font-size 0.2s;
     cursor: pointer;
-    padding: 0 5px;
+    padding:8px;
     transition: all .2s;
+    border-radius:50px;
+    border:2px solid rgba(255, 255, 255, 0.123);
   }
   #telegramButton:hover {
     background-color: rgb(63, 63, 63);
@@ -104,7 +91,7 @@ body {
   #support {
     font-size: 18px;
     position: relative;
-    bottom: 8px;
+    bottom: 4px;
     margin: 0 10px;
   }
   .chatBox {
@@ -126,7 +113,7 @@ body {
       .agent {
         width: 50px;
         height: 50px;
-        background-color: white;
+        background-color: rgb(51, 51, 51);
         border-radius: 50px;
         display: inline-block;
         background-image: url("https://cdn.imgbin.com/25/3/12/imgbin-anime-avatar-desktop-anime-5wgns3t6TneVx0vJWNaQ6rs63.jpg");
