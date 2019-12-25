@@ -3,6 +3,7 @@ body {
   background-image: url("../Backgrounds/napkin.svg");
   font-family: "Montserrat" !important;
   background-size: 300px;
+  min-width: 380px;
 }
 
 .content-section {
@@ -37,7 +38,7 @@ body {
   padding: 18px 10px;
   border: 0;
   width: 55%;
-  min-width: 480px;
+  min-width: 320px;
   background-color: white;
   transition: all 0.2s;
   border-top-right-radius: 3px;
