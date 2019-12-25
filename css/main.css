@@ -81,50 +81,98 @@ body {
 }
 
 .telegram {
+  border-radius: 3px;
   position: fixed;
   overflow: hidden;
-  right: 5px;
-  bottom: -25px;
+  right: 10px;
+  bottom: 10px;
   transition: width 0.3s;
-  width: 67px;
-}
-.telegram .telegramLink {
-  padding: 5px;
-  position: relative;
-  bottom: 60px;
-  white-space: nowrap;
-  left: 70px;
-  color: rgba(0, 0, 0, 0);
-}
-.telegram .telegramLink button {
-  border: 0;
-  padding: 5px;
-  color: white;
-  background-color: #11aeec;
-  cursor: pointer;
-  display: none;
 }
 .telegram #telegramButton {
-  font-size: 65px;
+  font-size: 40px;
   background-color: white;
   color: #28bbff;
-  border-radius: 100px;
-  padding: 2px;
   transition: font-size 0.2s;
   cursor: pointer;
+  padding: 0 5px;
+  transition: all 0.2s;
 }
-
-.telegram:hover {
-  width: 315px;
+.telegram #telegramButton:hover {
+  background-color: #3f3f3f;
 }
-
-.telegram:hover button {
-  display: block;
+.telegram #support {
+  font-size: 18px;
+  position: relative;
+  bottom: 8px;
+  margin: 0 10px;
+}
+.telegram .chatBox {
+  transition: all 0.3s;
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+}
+.telegram .chatBox .cross {
   position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
-
-.telegram:hover .telegramLink {
-  color: black;
+.telegram .chatBox .chatTop {
+  position: relative;
+  background-color: #00a2ff;
+  padding: 10px;
+}
+.telegram .chatBox .chatTop .agent {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+  display: inline-block;
+  background-image: url("https://cdn.imgbin.com/25/3/12/imgbin-anime-avatar-desktop-anime-5wgns3t6TneVx0vJWNaQ6rs63.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.telegram .chatBox .chatTop .agent .online {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 15px;
+  background-color: #29fc29;
+  border: 1px solid black;
+}
+.telegram .chatBox .chatTop span {
+  position: absolute;
+  top: 22px;
+  margin: 0 10px;
+  font-size: 17px;
+  color: white;
+}
+.telegram .chatBox .messageContainer {
+  padding: 15px;
+  padding-right: 30px;
+  text-align: left;
+  background-color: #f0f0f0;
+}
+.telegram .chatBox .messageContainer .message {
+  max-width: 250px;
+  border-radius: 3px;
+  background-color: white;
+  padding: 5px;
+}
+.telegram .chatBox .messageContainer .chatNow {
+  padding: 5px;
+  background-color: #23a7ff;
+  color: white;
+  border: 0;
+  width: 100%;
+  margin: 10px 0;
+  margin-bottom: 0;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=main.css.map */

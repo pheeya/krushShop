@@ -83,46 +83,96 @@ body {
   margin-bottom: 50px;
 }
 .telegram {
+  border-radius: 3px;
   position: fixed;
   overflow: hidden;
-  right: 5px;
-  bottom: -25px;
+  right: 10px;
+  bottom: 10px;
   transition: width 0.3s;
-  width: 67px;
-  .telegramLink {
-    padding: 5px;
-    position: relative;
-    bottom: 60px;
-    white-space: nowrap;
-    left: 70px;
-    color:rgba(0,0,0,0);
-    button {
-      border: 0;
-      padding: 5px;
-      color: white;
-      background-color: rgb(17, 174, 236);
-      cursor: pointer;
-      display:none;
-    }
-  }
   #telegramButton {
-    font-size: 65px;
+    font-size: 40px;
     background-color: white;
-    color: rgb(40, 187, 255);
-    border-radius: 100px;
-    padding: 2px;
+    color: #28bbff;
     transition: font-size 0.2s;
     cursor: pointer;
+    padding: 0 5px;
+    transition: all .2s;
   }
-}
-.telegram:hover {
-  width: 315px;
-}
-
-.telegram:hover  button{
-  display:block;
-  position: absolute;
-}
-.telegram:hover .telegramLink{
-  color:black;
+  #telegramButton:hover {
+    background-color: rgb(63, 63, 63);
+  }
+  #support {
+    font-size: 18px;
+    position: relative;
+    bottom: 8px;
+    margin: 0 10px;
+  }
+  .chatBox {
+    transition: all .3s;
+    max-height:0;
+    max-width:0;
+    overflow: hidden;
+    .cross{
+      position: absolute;
+      right:10px;
+      top:10px;
+      font-size:20px;
+      cursor: pointer;
+    }
+    .chatTop {
+      position: relative;
+      background-color: rgb(0, 162, 255);
+      padding: 10px;
+      .agent {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50px;
+        display: inline-block;
+        background-image: url("https://cdn.imgbin.com/25/3/12/imgbin-anime-avatar-desktop-anime-5wgns3t6TneVx0vJWNaQ6rs63.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        .online{
+          position: absolute;
+          width:15px;
+          height:15px;
+          right:0px;
+          bottom:0px;
+          border-radius:15px;
+          background-color:rgb(41, 252, 41);
+          border:1px solid black;
+        }
+      }
+      span {
+        position: absolute;
+        top: 22px;
+        margin: 0 10px;
+        font-size: 17px;
+        color: white;
+      }
+    }
+    .messageContainer {
+      padding: 15px;
+      padding-right: 30px;
+      text-align: left;
+      background-color: rgb(240, 240, 240);
+      .message {
+        max-width: 250px;
+        border-radius: 3px;
+        background-color: white;
+        padding: 5px;
+      }
+      .chatNow{
+        padding:5px;
+        background-color:rgb(35, 167, 255);
+        color:white;
+        border:0;
+        width:100%;
+        margin:10px 0;
+        margin-bottom:0;
+        font-size:17px;
+      }
+    }
+  }
 }

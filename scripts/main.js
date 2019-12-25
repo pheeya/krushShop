@@ -34,4 +34,20 @@ cards.forEach(function(card){
     stock.innerHTML="<i class='far fa-circle'></i>In Stock";
     stock.classList.add("stock");
     card.appendChild(stock)
-})
+});
+
+
+
+var telegramOpener = document.getElementById("telegramButton");
+var chatBox = document.getElementsByClassName("chatBox")[0];
+var cross = document.getElementsByClassName("cross")[0];
+telegramOpener.addEventListener("click", function(){
+chatBox.style.maxWidth="100%";
+chatBox.style.maxHeight="400px";
+});
+
+cross.addEventListener("click", function(){
+    chatBox.style.maxWidth="0";
+    chatBox.style.maxHeight="0";
+    })
+    
