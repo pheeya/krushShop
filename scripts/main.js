@@ -31,8 +31,14 @@ var cards = Array.from(document.getElementsByClassName("profile__product__info")
 
 cards.forEach(function(card){
     var stock  = document.createElement("div");
-    stock.innerHTML="<i class='far fa-circle'></i>In Stock";
+    if(card.classList.contains("noStock")){
+        stock.innerHTML="<i class='far fa-circle'></i>Not In Stock";
+    }
+    else {
+        stock.innerHTML="<i class='far fa-circle'></i>In Stock";
+    }
     stock.classList.add("stock");
+
     card.appendChild(stock)
 });
 

@@ -324,3 +324,7 @@ img{
     align-items:center;
     font-size:13px
 }
+
+.noStock i{
+color:red !important;
+}

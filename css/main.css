@@ -12,6 +12,8 @@ body {
   border: 2px solid rgba(97, 97, 97, 0.158);
   border-radius: 5px;
   margin-bottom: 0;
+  width: 100vw;
+  max-width: 1400px;
 }
 .content-section .profile__product__info .stock {
   text-align: right;
