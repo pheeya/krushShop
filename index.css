@@ -270,6 +270,11 @@ img{
     border-radius:100px;
     max-width:200px;
     margin:10px auto;
+    cursor: pointer;
+    transition:background-color .2s;
+}
+.profile__header__content .feedback:hover{
+    background-color:rgb(53, 53, 53);
 }
 .theme--pro .profile__actions{
     margin-bottom:20px
