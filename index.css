@@ -251,6 +251,26 @@ img{
     margin-right:auto;
     margin-bottom:20px
 }
+.profile__header__content .red{
+    color:red;
+}
+.profile__header__content .white{
+    color:white;
+}
+.profile__header__content .green{
+    color:rgb(21, 216, 21);
+}
+.profile__header__content span{
+    font-size:16px;
+    margin:0 5px;
+}
+
+.profile__header__content .feedback{
+    border:2px solid rgb(43, 43, 43);
+    border-radius:100px;
+    max-width:200px;
+    margin:10px auto;
+}
 .theme--pro .profile__actions{
     margin-bottom:20px
 }
